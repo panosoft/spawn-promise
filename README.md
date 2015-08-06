@@ -30,4 +30,4 @@ Spawns a child process with the given `command`, writes the `input` value to `st
 
 - `command` - The command to run.
 - `args` - An array of arguments.
-- `input` - A value to pass via stdin.
+- `input` - The value to write to `stdin`.
