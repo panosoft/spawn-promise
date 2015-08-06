@@ -1,14 +1,14 @@
 {
   "name": "spawn-promise",
   "version": "0.1.0",
-  "description": "",
+  "description": "Spawns a process and makes it simple to pipe data in and get data out.",
   "repository": "panosoft/spawn-promise",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha test --harmony"
+    "test": "mocha --harmony"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "suspend": "^0.6.1"
   },
