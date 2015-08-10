@@ -10,15 +10,19 @@ Spawns a process and makes it simple to pipe data in and get data out.
 
 ## Installation
 
-    npm install spawn-promise
+```
+npm install spawn-promise
+```
 
 ## Usage
 
-    var spawn = require(spawn-promise);
+```js
+var spawn = require(spawn-promise);
 
-    spawn('grep', ['H'], 'Hello').then(function (buffer) {
-      console.log(buffer.toString()); // Hello
-    });
+spawn('grep', ['H'], 'Hello').then(function (buffer) {
+  console.log(buffer.toString()); // Hello
+});
+```
 
 ## API
 
