@@ -2,15 +2,15 @@
 
 Spawns a process and makes it simple to pipe data in and get data out.
 
-[![npm](https://img.shields.io/npm/v/spawn-promise.svg)]()
-[![npm](https://img.shields.io/npm/l/spawn-promise.svg)]()
-[![Travis](https://img.shields.io/travis/panosoft/spawn-promise.svg)]()
-[![David](https://img.shields.io/david/panosoft/spawn-promise.svg)]()
-[![npm](https://img.shields.io/npm/dm/spawn-promise.svg)]()
+[![npm version](https://img.shields.io/npm/v/spawn-promise.svg)](https://www.npmjs.com/package/spawn-promise)
+[![npm license](https://img.shields.io/npm/l/spawn-promise.svg)](https://www.npmjs.com/package/spawn-promise)
+[![Travis](https://img.shields.io/travis/panosoft/spawn-promise.svg)](https://travis-ci.org/panosoft/spawn-promise)
+[![David](https://img.shields.io/david/panosoft/spawn-promise.svg)](https://david-dm.org/panosoft/spawn-promise)
+[![npm downloads](https://img.shields.io/npm/dm/spawn-promise.svg)](https://www.npmjs.com/package/spawn-promise)
 
 ## Installation
 
-```
+```sh
 npm install spawn-promise
 ```
 
@@ -26,12 +26,17 @@ spawn('grep', ['H'], 'Hello').then(function (buffer) {
 
 ## API
 
-### spawn( command [, args] [, input] )
+- [`spawn`](#spawn)
+
+---
+
+<a name="spawn"/>
+#### spawn ( command [, args] [, input] )
 
 Spawns a child process with the given `command`, writes the `input` value to `stdin`, and returns a `Promise` that is fulfilled with the concatenated `stdout` buffer.
 
-#### Arguments
+__Arguments__
 
 - `command` - The command to run.
-- `args` - An array of arguments.
+- `args` - An array of arguments to run the `command` with.
 - `input` - The value to write to `stdin`.
