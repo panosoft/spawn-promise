@@ -30,7 +30,7 @@ spawn('grep', ['H'], 'Hello').then(function (buffer) {
 
 ---
 
-<a name="spawn"/>
+<a name="spawn"></a>
 #### spawn ( command [, args] [, input] )
 
 Spawns a child process with the given `command`, writes the `input` value to `stdin`, and returns a `Promise` that is fulfilled with the concatenated `stdout` buffer.
