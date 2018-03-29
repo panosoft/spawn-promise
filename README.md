@@ -17,7 +17,7 @@ npm install spawn-promise
 ## Usage
 
 ```js
-var spawn = require(spawn-promise);
+var spawn = require('spawn-promise');
 
 spawn('grep', ['H'], 'Hello').then(function (buffer) {
   console.log(buffer.toString()); // Hello
